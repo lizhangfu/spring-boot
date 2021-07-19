@@ -35,6 +35,8 @@ import org.springframework.validation.Validator;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 
 /**
  * 
@@ -42,6 +44,8 @@ import static org.junit.Assert.fail;
  * 
  * @author Christian Dupuis
  */
+@TestConfiguration
+@ImportAutoConfiguration
 public class ConfigurationPropertiesBindingPostProcessorTests {
 
 	private AnnotationConfigApplicationContext context;
